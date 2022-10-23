@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens e Audios</title>
+    <link rel="shortcut icon" href="../cap5_aula1/favicon.ico" type="image/x-icon">
+    <style>
+        input {
+            padding: 10px;
+        }
+        #cor {
+            margin-left: 135px;
+            margin-top: 5px;
+        }
+        #imagem {
+            margin-left: 140px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body id="corpo">
+    <h1>Imagens e Audios</h1>
+    <div>
+        <p>
+            Vamos fazer um desafio de botões, mas primeiro você precisa se identificar
+        </p>
+        <p>
+            Digite o seu nome completo e depois aperte o botão de gravar
+            <br>
+            <input type="text" name="NomeUsuario" id="NomeUsuario">
+            <input type="button" value="Gravar" onclick="GravarNome()">
+        </p>
+    </div>
+    <div>
+        <p>
+            Digite o ano de seu nascimento e depois aperte o botão de gravar
+            <br>
+            <input type="text" name="IdadeUsuario" id="IdadeUsuario">
+            <input type="button" value="Gravar" onclick="GravarIdade()">
+        </p>
+    </div>
+    <div>
+        <p>
+            Agora vamos configurar o ambiente de seu desafio. Escolha uma cor
+        </p>
+        <p>
+          <input type="button" value="Vermelho" onclick="vermelho()">
+          <input type="button" value="Azul" onclick="azul()">
+          <input type="button" value="Verde" onclick="verde()">
+          <input type="button" value="Amarelo" onclick="amarelo()">
+          <input type="button" value="Cinza" onclick="cinza()">
+        </p>
+    </div>
+    <div>
+        <p>
+            Escolha uma imagem
+        </p>
+        <p>
+            <input type="button" value="Imagem 1" onclick="img1()">
+            <input type="button" value="Imagem 2" onclick="img2()">
+            <input type="button" value="Imagem 3" onclick="img3()">
+            <input type="button" value="Imagem 4" onclick="img4()">
+        </p>
+        <p>
+            <img src="" alt="" id="ResultadoImagem">
+        </p>
+    </div>
+    <div>
+        <p>
+            Escolha uma musica
+        </p>
+        <p>
+            <input type="button" value="Música 1" onclick="musica1()">
+            <input type="button" value="Música 2" onclick="musica2()">
+        </p>
+        <p>
+        <audio src="" id="ResultadoMusica" controls autoplay></audio>
+        </p>
+        <p id="licença">
+        
+        </p>
+    </div>
+    <script>
+         function GravarNome() {
+            const NomeCompleto = document.getElementById('NomeUsuario').value
+            if (NomeCompleto.length == 0) {
+                alert('Você não preencheu o campo corretamente, por faver tente de novo')
+            } else {
+                alert(`Olá ${NomeCompleto}, bem vindo!`)
+            }
+         }
+         function GravarIdade() {
+            const idade = document.getElementById('IdadeUsuario').value
+          if (idade.length == 0) {
+            alert('Você não preencheu o campo corretamente, por faver tente de novo')
+          } else if (2022 - idade > 100 || idade > 2022) {
+            alert('O ano que você digitou está errado, por favor tente de novo')
+          } else {
+            alert(`Ok, então Você tem ${2022 - idade} anos`)
+          }
+         }
+         function vermelho() {
+            document.getElementById('corpo').style.backgroundColor = 'red'
+         }
+         function azul() {
+            document.getElementById('corpo').style.backgroundColor = 'blue'
+         }
+         function verde() {
+            document.getElementById('corpo').style.backgroundColor = 'green'
+         }
+         function amarelo() {
+            document.getElementById('corpo').style.backgroundColor = 'yellow'
+         }
+         function cinza() {
+            document.getElementById('corpo').style.backgroundColor = 'grey'
+         }
+         function img1() {
+            document.getElementById('ResultadoImagem').src = 'imagem/imagem1.jpg'
+         }
+         function img2() {
+            document.getElementById('ResultadoImagem').src = 'imagem/imagem2.jpg'
+         }
+         function img3() {
+            document.getElementById('ResultadoImagem').src = 'imagem/imagem3.jpg'
+         }
+         function img4() {
+            document.getElementById('ResultadoImagem').src = 'imagem/imagem4.jpg'
+         }
+         function musica1() {
+            document.getElementById('ResultadoMusica').src = '12 Mornings - Audionautix.mp3'
+            document.getElementById('licença').innerHTML = '12 Mornings de Audionautix é licenciada de acordo com a licença Atribuição 4.0 da Creative Commons. https://creativecommons.org/licenses/by/4.0/ <br>Artista: http://audionautix.com/'
+         }
+         function musica2() {
+            document.getElementById('ResultadoMusica').src = '30 Second Classical - Audionautix.mp3'
+            document.getElementById('licença').innerHTML = '30 Second Classical de Audionautix é licenciada de acordo com a licença Atribuição 4.0 da Creative Commons. https://creativecommons.org/licenses/by/4.0 <br>Artista: http://audionautix.com/'
+         }
+    </script>
+</body>
+</html>
