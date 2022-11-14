@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="arquivos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Games</title>
+</head>
+<body>
+    <main>
+        <h1 style="text-align: center;">Vamos Jogar</h1>
+        <h2>Cadastro</h2>
+        <p>
+            Antes de começarmos, temos de nos apresentar.
+            <br> 
+            Qual é o seu nome ? 
+            <input type="text" name="nome" id="nome">
+            <input type="button" value="Salvar" id="salvar" onclick="salvarNome()">
+        </p>
+        <section>
+            <h2>Tabuada</h2>
+            <p>
+                Você gostaria de saber a tabuada de qual número ?
+            </p>
+            <p>
+                <input type="number" name="numero" id="numero">
+                <input type="button" value="Salvar" onclick="salvarNumero()">
+                <input type="button" value="Apagar" onclick="apagar()">
+            </p>
+            <p id="resultadoTabuada"></p>
+        </section>
+        <section>
+            <h2>Desafio das palavras</h2>
+            <p>
+                Abaixo você terá dez opções de frutas. Escolha o nome de cinco frutas, mas lembre-se, escreva o nome da fruta e aperte o botão para confirmar 
+            </p>
+            <p>
+                <ul type="square">
+                    <li>banana</li>
+                    <li>maçã</li>
+                    <li>uva</li>
+                    <li>abacate</li>
+                    <li>morango</li>
+                </ul>
+                <ul type="square" id="lista">
+                    <li>goiaba</li>
+                    <li>melão</li>
+                    <li>mamão</li>
+                    <li>melancia</li>
+                    <li>limão</li>
+                </ul>
+            </p>
+            <p>
+                <input type="text" name="fruta" id="fruta">
+                <input type="button" value="Confirme" onclick="confirmeFrutas()">
+            </p>
+            <p id="res1"></p>
+            <p>
+                Agora vamos analisar as dez opções de frutas
+            </p>
+            <p>
+                <input type="button" value="Analisar as frutas" onclick="botao1()">
+            </p>
+            <p id="res2"></p>
+            <p id="res3"></p>
+            <p id="res4"></p>
+            <p id="res5"></p>
+            <p id="res6"></p>
+            <p id="res7"></p>
+            <p id="res8"></p>
+        </section>
+        <footer>
+            <p>
+                <img src="arquivos/ilha.png" alt="pequena ilha no mar" onclick="audio()">
+            </p>
+            <p>
+                <audio id="audio" autoplay></audio>
+            </p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
