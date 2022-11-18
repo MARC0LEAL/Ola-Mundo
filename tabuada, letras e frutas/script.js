@@ -42,7 +42,7 @@ let resultado8 = document.getElementById('res8')
 function botao1() {
     let resultado2 = document.getElementById('res2')
     resultado2.innerHTML = `Lista das frutas escolhidas<br>${frutasArmazenadas}`
-   resultado3.innerHTML =`frutas com 3 letras <br>${frutasArmazenadas.filter(a => a.length == 3)}`
+    resultado3.innerHTML =`frutas com 3 letras <br>${frutasArmazenadas.filter(a => a.length == 3)}`
     resultato4.innerHTML = `frutas com 4 letras <br>${frutasArmazenadas.filter(a => a.length == 4)}`
     resultado5.innerHTML = `frutas com 5 letras <br>${frutasArmazenadas.filter(a => a.length == 5)}`
     resultado6.innerHTML = `frutas com 6 letras <br>${frutasArmazenadas.filter(a => a.length == 6)}`

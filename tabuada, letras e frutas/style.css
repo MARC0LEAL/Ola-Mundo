@@ -66,6 +66,50 @@ section {
     border-radius: 5px;
     text-align: center;
 }
+#banana {
+    margin-left: 10px;
+}
+#maça {
+    margin-left: 190px;
+    margin-top: -230px;
+}
+#uva {
+    margin-left: 370px;
+    margin-top: -210px;
+}
+#abacate {
+    margin-left: 540px;
+    margin-top: -190px;
+}
+#morango {
+    margin-left: 700px;
+    margin-top: -440px;
+}
+#goiaba {
+    margin-left: 15px;
+}
+#melao {
+    margin-left: 215px;
+    margin-top: -190px;
+}
+#mamao {
+    margin-left: 380px;
+    margin-top: -200px;
+}
+#melancia {
+    margin-left: 545px;
+    margin-top: -180px;
+}
+#limao {
+    margin-left: 710px;
+    margin-top: -245px;
+}
+iframe {
+    width: 560px; 
+    height: 315px;
+    border-radius:5px; 
+    margin-left: 150px;
+}
 /*
 #0378A6
 #04ADBF
