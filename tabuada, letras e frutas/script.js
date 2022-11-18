@@ -92,4 +92,5 @@ function videoLimao() {
 }
 function audio() {
     document.getElementById('audio').src = 'arquivos/audio.mp3'
+    videoFruta.src = ''
 }
