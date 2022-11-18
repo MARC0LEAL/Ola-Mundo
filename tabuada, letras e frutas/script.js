@@ -49,6 +49,47 @@ function botao1() {
     resultado7.innerHTML = `frutas com 7 letras <br>${frutasArmazenadas.filter(a => a.length == 7)}`
     resultado8.innerHTML = `frutas com 8 letras <br>${frutasArmazenadas.filter(a => a.length == 8)}`
 }
+let videoFruta = document.getElementById('video')
+function videoBanana() {
+    videoFruta.src = "https://www.youtube.com/embed/eYldFyJBAGg"
+    document.getElementById('audio').src = ''
+}
+function videoMaça() {
+    videoFruta.src = "https://www.youtube.com/embed/wTedgL46AWE"
+    document.getElementById('audio').src = ''
+}
+function videoUva() {
+    videoFruta.src = "https://www.youtube.com/embed/kz8qvRNmmQw"
+    document.getElementById('audio').src = ''
+}
+function videoAbacate() {
+    videoFruta.src = "https://www.youtube.com/embed/eDGkbcwbjko"
+    document.getElementById('audio').src = ''
+}
+function videoMorango() {
+    videoFruta.src = "https://www.youtube.com/embed/G66DWJ9fqy0"
+    document.getElementById('audio').src = ''
+}
+function videoGoiaba() {
+    videoFruta.src = "https://www.youtube.com/embed/RAM-Xe07cl8" 
+    document.getElementById('audio').src = ''
+}
+function videoMelao() {
+    videoFruta.src = "https://www.youtube.com/embed/21t5Dw8hTQY"
+    document.getElementById('audio').src = ''
+}
+function videoMamao() {
+    videoFruta.src = "https://www.youtube.com/embed/1gXzEUoMtK8"
+    document.getElementById('audio').src = ''
+}
+function videoMelancia() {
+    videoFruta.src = "https://www.youtube.com/embed/ohU0ImeLvBo"
+    document.getElementById('audio').src = ''
+}
+function videoLimao() {
+    videoFruta.src = "https://www.youtube.com/embed/DCvBg7dr5bM"
+    document.getElementById('audio').src = ''
+}
 function audio() {
     document.getElementById('audio').src = 'arquivos/audio.mp3'
 }
