@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas de menu</title>
+    <style>
+        body {
+            background-color: #ccb6e1;
+            color: #be904b;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        .caixa {
+            font-size: 2em;
+            background-color: #c095e8;
+            width: 1000px;
+            border-radius: 5px;
+            margin: auto;
+        }
+        .ul1 {
+            display: none;
+            font-size: large;
+            background-color: #4a2d65;
+            width: 300px;
+            border-radius: 5px;
+            padding: 1px;
+        }
+        .ul2 {
+            font-size: large;
+            background-color: #4a2d65;
+            width: 300px;
+            border-radius: 5px;
+            padding: 1px; 
+        }
+        #cx1:hover > .ul1 {
+            display:inline-block;
+        }
+        #cx2 {
+            margin-top: 100px;
+        }
+        #menu2 {
+            display: none;
+            background-color: #4a2d65;
+            width:1000px ;
+            border-radius: 5px;
+        }
+        #cx2:hover > #menu2 {
+            display: block;
+        }
+        a {
+            color: #be904b;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #c095e8;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando um menu de departamentos</h1>
+    <div id="cx1" class="caixa">
+        TODOS OS DEPARTAMENTOS
+        <br>
+            <ul class="ul1" type="none">
+                <li>Eletrônicos</li><br>
+                <li>teste</li>
+                <li>teste</li>
+                <li>teste</li>
+            </ul>
+            <ul class="ul1" type="none">
+                <li>Perfumaria</li><br>
+                <li>teste</li>
+                <li>teste</li>
+                <li>teste</li>
+            </ul>
+            <ul class="ul1" type="none">
+                <li>Livros</li><br>
+                <li><a href="https://www.americanas.com.br/produto/113201204?pfm_carac=como-eu-era-antes-de-voce&pfm_index=1&pfm_page=search&pfm_pos=grid&pfm_type=search_page&offerId=60dceb0952131c3c8192fd37&buyboxToken=smartbuybox-acom-v2-00e3884d-d30a-44fc-b2f9-f3ab65ab49ba-2022-12-05%2020%3A22%3A26%200000" target="_blank" rel="external">Como eu era antes de você</a></li>
+                <li><a href="https://www.americanas.com.br/produto/5519491555?pfm_carac=um-homem-de-sorte&pfm_index=1&pfm_page=search&pfm_pos=grid&pfm_type=search_page&offerId=62e4154fadbc5f39b9abe2a5" target="_blank" rel="external">Um homem de sorte</a></li>
+                <li><a href="https://www.americanas.com.br/produto/3962950656?pfm_carac=de-sangue-e-cinzas&pfm_index=1&pfm_page=search&pfm_pos=grid&pfm_type=search_page&offerId=614ca0c209c351890d601424&buyboxToken=smartbuybox-acom-v2-7b3a524d-52d4-4f18-9e56-f91cdb96fe77-2022-12-05%2020%3A26%3A43%200000">De sangue e cinzas</a></li>
+            </ul>
+    </div>
+    <div id="cx2" class="caixa">
+        DEPARTAMENTOS EXTRAS
+            <div id="menu2">
+                <ul type="none" class="ul2">
+                    <li>Games</li>
+                    <li>Academia</li>
+                </ul>
+                <ul type="none" class="ul2">
+                    <li>Móveis</li>
+                    <li>Decorações</li>
+                </ul>
+                <ul type="none" class="ul2">
+                    <li>Eletrodomésticos</li>
+                    <li>Moda</li>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>
